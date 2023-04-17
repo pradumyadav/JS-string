@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Q1-Count Characters</h5>
+    <p>const countCharacters = (S) => </p>
+        <p> {</p>
+            <p>  let count1=0;</p>
+                <p>       let count2=0;</p>
+                    <p>          for(let i=0;i<=S.length;i++){</p>
+                        <p>            if(S.charAt(i)==='A'){</p>
+                            <p>             count1++;</p>
+                                <p>            }</p>
+                                    <p>         else if(S.charAt(i)==='D'){</p>
+                                        <p>         count2++;</p>
+                                            <p>     }</p>
+                                                <p> }</p>
+                                                    <p>let ans = [count1,count2];</p>
+<p>  return ans; </p>   
+    <p>};</p>
+    <h5>Q2- Count the Heads?</h5>
+    
+        <p> var Count_Occ = (s) => </p>
+            <p> {</p>
+                <p>       let n=s.length;</p>
+                    <p>       let str=s.split("").sort().join("");</p>
+                        <p> let ans="";</p>
+                            <p>   for(let i=0;i< n;i++){</p>
+                                <p>  let count=0;</p>
+                                    <p>for(let j=0;j< n;j++){</p>
+                                        <p> if(str[i]===str[j] && i>j){</p>
+                                            <p>  break;</p>
+                                                <p> }</p>
+                                                    <p> if(str[i]===str[j]){</p>
+                                                        <p>  count+=1;</p>
+                                                            <p>  }</p>
+                                                                <p> }</p>
+                                                                    <p>if(count>1){</p>
+                                                                        <p> ans+=str[i]+count;</p>
+<p>}}</p>
+<p>return ans;</p>
+ <p> };</p>
+ <h5>Q3- Count the Vowels?</h5>
+
+    <p> { </p>
+        <p> let ans=0;</p>
+            <p>  for(i=0;i< S.length;i++){</p>
+                <p>  if(S.charAt(i)==='a'|| S.charAt(i)==='e'|| S.charAt(i)==='i'|| S.charAt(i)==='o'|| S.charAt(i)==='u'){</p>
+                    <p>  ans++;</p>
+                        <p>  }</p>
+                            <p>}</p>
+                                <p> return ans;  </p>
+                                    <p> };</p>
+<h5>Q4- Concatenate the Strings</h5>
+
+    <p> var Concatenate_Strings = (S1, S2) =</p>> 
+    <p>{</p>
+    <p> let ans = (S1 +""+ S2);</p>
+      <p> return ans; </p>
+        <p>};</p>
+
+ <h5>Q5-Find Length?</h5>
+ <p>const findLength = (S) => </p>
+    <p>  {</p>
+        <p>  let ans=0;</p>
+         <p>  for(let i=0;i< S.length;i++){</p>
+            <p>   ans+=1;</p>
+              <p>  }</p>
+              <p>  return ans;   </p>
+            <p>};</p>
+    <h5>Q6- Find the Winner?</h5>
+    <p>var Game_Winner = (S) => </p>
+        <p> {</p>
+            <p> let a=0;</p>
+              <p>  let b=0;</p>
+              <p>   for (let i=0;i<S.length;i++){ </p>
+                <p>  if(S.charAt(i)==='A'){</p>
+                    <p>   a++;</p>
+                  <p>    }</p>
+                  <p>  else if(S.charAt(i)==='D'){</p>
+                    <p>    b++;</p>
+                  <p>   }</p>
+                  <p>   if(a>b){</p>
+                    <p>  return "Aditya";</p>
+                  <p> }</p>
+                  <p>  else if(a< b){</p>
+                    <p>   return "Danish";</p>
+                  <p>   }</p>
+                  <p>    else{</p>
+                    <p>   return "Draw";</p>
+                  <p>  } </p>
+                  <p>  }</p>
+        <h5>Q7- Join Strings?</h5>
+        <p>const joinStrings = (S, P) => </p>
+            <p>  {</p>
+                <p> let ans = (S +""+ P);</p>
+                  <p>         return ans;   </p>
+                      <p> };</p>
+            <h5>Q8- Plaindrome Check ?</h5>
+            <p>var Palin_Check = (str) =></p>
+<p>   {</p>
+<p>   let ans="";</p>
+<p>   for(let i=str.length-1;i>=0;i--){</p>
+<p>   ans+=str[i];</p>
+<p>  }</p>
+<p> if(ans===str){</p>
+<p>  return "True"; </p>
+<p>    }</p>
+<p>  else{</p>
+<p>  return "False";</p>
+<p>    }</p>
+<p>   }</p>
+<h5>Q9- Reverse the String ?</h5>
+<p>var Reverse_String = (str) => </p>
+<p>  {</p>
+<p>    let ans="";</p>
+<p>  for(let i=str.length-1;i>=0;i--){</p>
+<p>   ans+=str[i];</p>
+<p>   }</p>
+<p>   return ans;    </p>
+<p> };</p>
+<h5>Q10- Match the String?</h5>
+                   
+<p>  var String_Match = (S1,S2) => </p>
+<p>   {</p>
+<p> if (S1===S2){</p>
+<p>  return "YES";</p>
+<p> }</p>
+<p>  else{</p>
+<p>  return "NO";</p>
+<p> } </p>       
+<p>};</p>
+<h5>Q11- String Replace?</h5>
+                        
+<p>var Replace = (S, pattern , text) => </p>
+<p>  {</p>
+<p>  return S.replace(pattern,text);    </p>
+<p> };</p>
+<h5>Q12- Split the String/</h5></p>
+                            
+<p>var Split_the_string = (S) => </p>
+<p>  {</p>
+                                  
+<p>    let res=S.split(" ");</p>
+ <p>   return res;</p>
+<p> };</p>
+<h5>Q13- Count the Vowels and Consonants?</h5></p>
+<p>var Count_Vowels= (S) => </p>
+<p> {</p>
+<p> let ans=0;</p>
+<p>   for(i=0;i<S.length;i++){  </p>
+<p>    if(S.charAt(i)==='a'||S.charAt(i)==='e'||S.charAt(i)==='i'||S.charAt(i)==='o'||S.charAt(i)==='u'){</p>
+<p>     ans++;</p>
+<p>      }</p>
+<p>        }</p>
+<p>       return ans;      </p>
+<p>   };</p>
+ <p> var Count_Consonants= (S) => </p>
+ <p>  {</p>
+<p>    let ans1=0;</p>
+<p>   for(i=0;i< S.length;i++){</p>
+<p>   if(S.charAt(i)!=='a'&&S.charAt(i)!=='e'&& S.charAt(i)!=='i'&& S.charAt(i)!=='o' && S.charAt(i)!=='u'){</p>
+<p>   ans1++;</p>
+<p>    }</p>
+<p>    }</p>
+ <p>    return ans1;  </p> 
+<p> };</p>
+</body>
+</html>
